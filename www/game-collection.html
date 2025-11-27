@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+# -*- coding: html, css, javascript -*-
+*****************************************************************************
+Copyright (c) 2025 philbruck
+
+date: 2025-11-27
+author: philbruck <kontakt@philbruck.de> [please only pgp-encrypted, see my GitHub]
+contributors: -
+version: 1.0.0
+*****************************************************************************
+Just a collection of games I have digitized.
+-->
+<html lang="de">
+
+<head>
+  <title>Spielesammlung</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="philbruck">
+  <meta name="description" content="Free Online Game Collection">
+  <meta name="keywords" content="Impostor, impostor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="../data/icon/logo.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../data/images/logo.webp" alt="42" style="width:40px;" class="rounded-pill border">
+        </a>
+        <a class="navbar-brand">
+          <bold>Spielesammlung</bold>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Info
+              </a>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1">Über diese Seite</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal#1 -Über diese Seite- -->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Über diese Seite</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>Auf dieser Seite habe ich ein paar Spiele digitalisiert. Du kannst sie gerne spielen und weiterempfehlen.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal#1 end-->
+  <!-- Modal#2 -Imposter- -->
+  <div class="modal fade" id="staticBackdropImpostor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Imposter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>Spielregeln für das Spiel „Imposter“</p>
+            <p>Spielvorbereitung:</p>
+            <p>
+              Spieleranzahl wählen: Zu Beginn des Spiels wird die Gesamtzahl der Spieler festgelegt. Die minimale Anzahl
+              an Spielern sollte 3 betragen.
+              <br>
+              Anzahl der Impostor wählen: Die Spieler müssen entscheiden, wie viele Impostor im Spiel sein werden. Die
+              Impostor kennen das zu erratende Wort nicht.
+            </p>
+            <p>Ziel des Spiels:</p>
+            <p>Für die Nicht-Impostor: Das Ziel ist es, herauszufinden, wer die Impostor sind, indem sie geschickt
+              Wörter
+              sagen und die anderen Spieler beobachten.
+              <br>
+              Für die Impostor: Das Ziel ist es, das zu erratende Wort zu erraten, ohne entdeckt zu werden.
+            </p>
+
+            <p>Spielablauf:</p>
+            <p>
+              Das Wort festlegen: Zu Beginn wird ein zu erratendes Wort festgelegt. Nur die Nicht-Impostor kennen dieses
+              Wort. Die Impostor wissen nicht, welches Wort es ist.
+              <br>
+              Das Handy wird reihum weitergegeben: Nach der Festlegung des Wortes wird das Handy mit dem zu erratenden
+              Wort an den ersten Spieler weitergegeben. Jeder Spieler darf das Wort einmal auf dem Handy anschauen.
+              <br>
+              Start des Spiels: Sobald alle Spieler das Wort einmal gesehen haben, startet das Spiel.
+            </p>
+
+            <p>Rundenablauf:</p>
+
+            <p>Wörter sagen:
+
+              In jeder Runde müssen die Spieler ein Wort nennen, das im Zusammenhang mit dem zu erratenden Wort steht.
+              <br>
+              Es gibt insgesamt 2 Runden.
+              <br>
+              Die Spieler müssen darauf achten, dass die Wörter, die sie sagen, nicht zu nahe oder zu weit entfernt vom
+              zu erratenden Wort sind. Zu nahe Wörter könnten den Impostor zu viele Hinweise auf das Wort geben, zu weit
+              entfernte Wörter könnten die Nicht-Impostor verwirren und den Impostor unauffällig machen.
+              <br>
+              Ziel der Runden: Der Zweck der Runden ist es, den Impostor zu entlarven, indem man deren Unwissenheit über
+              das zu erratende Wort erkennt. Die Impostor müssen versuchen, so zu tun, als ob sie das Wort kennen.
+              <br>
+              Achten auf das Verhalten: Die Nicht-Impostor müssen auf die Wörter der anderen achten. Wer unsicher klingt
+              oder Wörter sagt, die keinen offensichtlichen Bezug zum zu erratenden Wort haben, könnte ein Impostor
+              sein.
+            </p>
+
+            <p>Ende des Spiels:</p>
+
+            <p>Ermittlungen:</p>
+            <p>
+              Nach den beiden Runden stimmen alle Spieler ab, wer ihrer Meinung nach ein Impostor ist.
+              <br>
+              Die Person(en) mit den meisten Stimmen wird(werden) gewählt, und es wird überprüft, ob sie tatsächlich ein
+              Impostor war.
+            </p>
+            <p>Gewinnbedingungen:</p>
+            <p>Die Nicht-Impostor gewinnen, wenn sie alle Impostor entlarven konnten und die Impostor das Wort nicht
+              erraten haben.
+              <br>
+              Die Impostor gewinnen, wenn sie das zu erratende Wort erraten können oder nicht entlarvt werden.
+            </p>
+            <p>Zusätzliche Hinweise:</p>
+            <p>Impostor sollten versuchen, sich mit den anderen Spielern abzustimmen und nicht zu auffällig zu wirken,
+              wenn sie ihre Wörter wählen.<br>
+              Wenn ein Impostor fälschlicherweise für einen Nicht-Impostor gehalten wird und das Wort errät, gewinnen
+              trotzdem die Impostor.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal#2 end-->
+
+  <div class="container-fluid mt-2">
+    <br>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 12rem;">
+        <div class="d-flex justify-content-center">
+          <img src="../data/images/impostor-impostor1.jpg" class="card-img-top" alt="Impostor picture"
+            style="width: 12rem; height: 12rem;">
+        </div>
+        <div class="card-body">
+          <div>
+            <h5 class="card-title text-center">Imposter <span type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdropImpostor">&#9432</span></h5>
+          </div>
+          <p class="card-text text-center">Findet den Betrüger in euren Reihen.</p>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-dark" type="button" href="./impostor.html">Spielen!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
+
+  <footer class="mt-auto bg-light border-top pt-1 pb-2 d-flex flex-column">
+    <div class="d-flex flex-row justify-content-center" style="font-size: 70%">
+      <div>Copyright © 2025 philbruck</div>
+    </div>
+    <div class="d-flex flex-row justify-content-center" style="font-size: 60%">
+      <a class="link-dark link-opacity-50-hover link-underline link-underline-opacity-0"
+        href="./legal/de/terms-of-use.html">Nutzungsbedingungen</a>
+      <div class="mx-1">|</div>
+      <a class="link-dark link-opacity-50-hover link-underline link-underline-opacity-0"
+        href="./legal/de/data-privacy.html">Datenschutz</a>
+      <div class="mx-1">|</div>
+      <a class="link-dark link-opacity-50-hover link-underline link-underline-opacity-0"
+        href="./legal/de/thanks-to.html">Danke an!</a>
+      <div class="mx-1">|</div>
+      <a class="link-dark link-opacity-50-hover link-underline link-underline-opacity-0"
+        href="https://github.com/philbruck" target="blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+  <!-- .......................................................................... script .......................................................................... -->
+  <script>
+
+  </script>
+</body>
+
+</html>
