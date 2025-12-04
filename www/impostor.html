@@ -30,11 +30,103 @@ Just a collection of games I have digitized.
 
 <body class="d-flex flex-column min-vh-100">
 
+  <!-- Modal#1 -Imposter- -->
+  <div class="modal fade" id="staticBackdropImpostor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Imposter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p class="fw-bold text-decoration-underline">Spielregeln für das Spiel „Imposter“</p>
+            <p class="fw-bold">Spielvorbereitung:</p>
+            <p>
+              Spieleranzahl wählen: Zu Beginn des Spiels wird die Gesamtzahl der Spieler festgelegt. Die minimale Anzahl
+              an Spielern sollte 3 betragen.
+              <br>
+              Anzahl der Imposter wählen: Die Spieler müssen entscheiden, wie viele Imposter im Spiel sein werden. Die
+              Imposter kennen das zu erratende Wort nicht.
+            </p>
+            <p class="fw-bold">Ziel des Spiels:</p>
+            <p>Für die Nicht-Imposter: Das Ziel ist es, herauszufinden, wer die Imposter sind, indem sie geschickt
+              Wörter
+              sagen und die anderen Spieler beobachten.
+              <br>
+              Für die Impostder: Das Ziel ist es, das zu erratende Wort zu erraten, ohne entdeckt zu werden.
+            </p>
+
+            <p class="fw-bold">Spielablauf:</p>
+            <p>
+              Zu Beginn wird ein zu erratendes Wort per Zufall festgelegt. Nur die Nicht-Imposter kennen dieses
+              Wort. Die Imposter wissen nicht, welches Wort es ist.
+              <br>
+              Nach der Festlegung des Wortes wird das Handy mit dem zu erratenden
+              Wort an den ersten Spieler gegeben. Nachdem Spieler1 das Wort gelesen hat wird das Handy weiter gegeben.
+              Jeder Spieler darf das Wort einmal auf dem Handy anschauen.
+              <br>
+              Sobald alle Spieler das Wort einmal gesehen haben, startet das Spiel.
+            </p>
+
+            <p class="fw-bold">Rundenablauf:</p>
+
+            <p>Wörter sagen:
+
+              In jeder Runde müssen die Spieler ein Wort nennen, das im Zusammenhang mit dem zu erratenden Wort steht.
+              <br>
+              Es gibt insgesamt 2 Runden.
+              <br>
+              Die Spieler müssen darauf achten, dass die Wörter, die sie sagen, nicht zu nahe oder zu weit entfernt vom
+              zu erratenden Wort sind. Zu nahe Wörter könnten den Imposter zu viele Hinweise auf das Wort geben, zu weit
+              entfernte Wörter könnten die Nicht-Imposter verwirren und den Imposter unauffällig machen.
+              <br>
+              Der Zweck der Runden ist es, den Imposter zu entlarven, indem man deren Unwissenheit über
+              das zu erratende Wort erkennt. Die Imposter müssen versuchen, so zu tun, als ob sie das Wort kennen.
+              <br>
+              Die Nicht-Imposter müssen auf die Wörter der anderen achten. Wer unsicher klingt
+              oder Wörter sagt, die keinen offensichtlichen Bezug zum zu erratenden Wort haben, könnte ein Imposter
+              sein.
+            </p>
+
+            <p class="fw-bold">Ende des Spiels:</p>
+
+            <p class="fw-bold">Ermittlungen:</p>
+            <p>
+              Nach den beiden Runden stimmen alle Spieler ab, wer ihrer Meinung nach ein Imposter ist.
+              <br>
+              Die Person(en) mit den meisten Stimmen wird(werden) gewählt, und es wird überprüft, ob sie tatsächlich ein
+              Imposter war.
+            </p>
+            <p class="fw-bold">Gewinnbedingungen:</p>
+            <p>Die Nicht-Imposter gewinnen, wenn sie alle Imposter entlarven konnten und die Imposter das Wort nicht
+              erraten haben.
+              <br>
+              Die Imposter gewinnen, wenn sie das zu erratende Wort erraten können oder nicht entlarvt werden.
+            </p>
+
+            <p class="fw-bold text-decoration-underline">Zusätzliche Hinweise:</p>
+            <p>Imposter sollten versuchen, sich mit den anderen Spielern abzustimmen und nicht zu auffällig zu wirken,
+              wenn sie ihre Wörter wählen.<br>
+              Wenn ein Imposter fälschlicherweise für einen Nicht-Imposter gehalten wird und das Wort errät, gewinnen
+              trotzdem die Imposter.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal#1 end-->
+
   <div class="mt-3" id="gamePhase1">
     <div class="container-fluid">
       <div class="d-flex flex-column align-items-center">
         <div class="w-75">
-          <h3 class="text-center">Imposter</h3>
+          <h3 class="text-center">Imposter <span type="button" data-bs-toggle="modal"
+              data-bs-target="#staticBackdropImpostor">&#9432</span></h3>
           <p class="text-center">Findet den oder die Betrüger in euren Reihen.</p>
           <label class="form-label">Anzahl der Spieler:</label>
           <br>
@@ -78,7 +170,7 @@ Just a collection of games I have digitized.
           <br>
           <br>
           <br>
-          <a class="btn btn-dark w-100" role="button" href="./game-collection.html" >Zurück</a>
+          <a class="btn btn-dark w-100" role="button" href="./game-collection.html">Zurück</a>
         </div>
       </div>
     </div>
