@@ -29,7 +29,7 @@ Each game comes with a description and instructions.
 
 The game-collection can be easily downloaded and run in the browser. No installation, no hassle. The only dependency is Bootstrap's CSS/JavaScript. An internet connection is required for this.
 
-The games can also be played simply online. 
+The games can also be played easily online. 
 
 ### Prerequisites:
 - Up to date browser
@@ -62,6 +62,10 @@ Simply open the HTML files or access it online.
 This project is licensed under the Apache-2.0 License – see the LICENSE file for details.
 
 ## Directories
+
+### impostor
+
+In this directory, you will find the game and all data related to the game Impostor.
 
 ### www
 
