@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--
+# -*- coding: html, css, javascript -*-
+*****************************************************************************
+Copyright (c) 2025 philbruck
+
+date: 2025-11-27
+author: philbruck <kontakt@philbruck.de> [please only pgp-encrypted, see my GitHub]
+contributors: -
+version: 1.0.0
+*****************************************************************************
+Just a collection of games I have digitized.
+-->
+<html lang="de">
+
+<head>
+  <title>Imposter</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="philbruck">
+  <meta name="description" content="Free Online Game Collection">
+  <meta name="keywords" content="Impostor, impostor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Modal#1 -Imposter- -->
+  <div class="modal fade" id="staticBackdropImpostor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Imposter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p class="fw-bold text-decoration-underline">Spielregeln für das Spiel „Imposter“</p>
+            <p class="fw-bold">Spielvorbereitung:</p>
+            <p>
+              Spieleranzahl wählen: Zu Beginn des Spiels wird die Gesamtzahl der Spieler festgelegt. Die minimale Anzahl
+              an Spielern sollte 3 betragen.
+              <br>
+              Anzahl der Imposter wählen: Die Spieler müssen entscheiden, wie viele Imposter im Spiel sein werden. Die
+              Imposter kennen das zu erratende Wort nicht.
+            </p>
+            <p class="fw-bold">Ziel des Spiels:</p>
+            <p>Für die Nicht-Imposter: Das Ziel ist es, herauszufinden, wer die Imposter sind, indem sie geschickt
+              Wörter
+              sagen und die anderen Spieler beobachten.
+              <br>
+              Für die Impostder: Das Ziel ist es, das zu erratende Wort zu erraten, ohne entdeckt zu werden.
+            </p>
+
+            <p class="fw-bold">Spielablauf:</p>
+            <p>
+              Zu Beginn wird ein zu erratendes Wort per Zufall festgelegt. Nur die Nicht-Imposter kennen dieses
+              Wort. Die Imposter wissen nicht, welches Wort es ist.
+              <br>
+              Nach der Festlegung des Wortes wird das Handy mit dem zu erratenden
+              Wort an den ersten Spieler gegeben. Nachdem Spieler1 das Wort gelesen hat wird das Handy weiter gegeben.
+              Jeder Spieler darf das Wort einmal auf dem Handy anschauen.
+              <br>
+              Sobald alle Spieler das Wort einmal gesehen haben, startet das Spiel.
+            </p>
+
+            <p class="fw-bold">Rundenablauf:</p>
+
+            <p>Wörter sagen:
+
+              In jeder Runde müssen die Spieler ein Wort nennen, das im Zusammenhang mit dem zu erratenden Wort steht.
+              <br>
+              Es gibt insgesamt 2 Runden.
+              <br>
+              Die Spieler müssen darauf achten, dass die Wörter, die sie sagen, nicht zu nahe oder zu weit entfernt vom
+              zu erratenden Wort sind. Zu nahe Wörter könnten den Imposter zu viele Hinweise auf das Wort geben, zu weit
+              entfernte Wörter könnten die Nicht-Imposter verwirren und den Imposter unauffällig machen.
+              <br>
+              Der Zweck der Runden ist es, den Imposter zu entlarven, indem man deren Unwissenheit über
+              das zu erratende Wort erkennt. Die Imposter müssen versuchen, so zu tun, als ob sie das Wort kennen.
+              <br>
+              Die Nicht-Imposter müssen auf die Wörter der anderen achten. Wer unsicher klingt
+              oder Wörter sagt, die keinen offensichtlichen Bezug zum zu erratenden Wort haben, könnte ein Imposter
+              sein.
+            </p>
+
+            <p class="fw-bold">Ende des Spiels:</p>
+
+            <p class="fw-bold">Ermittlungen:</p>
+            <p>
+              Nach den beiden Runden stimmen alle Spieler ab, wer ihrer Meinung nach ein Imposter ist.
+              <br>
+              Die Person(en) mit den meisten Stimmen wird(werden) gewählt, und es wird überprüft, ob sie tatsächlich ein
+              Imposter war.
+            </p>
+            <p class="fw-bold">Gewinnbedingungen:</p>
+            <p>Die Nicht-Imposter gewinnen, wenn sie alle Imposter entlarven konnten und die Imposter das Wort nicht
+              erraten haben.
+              <br>
+              Die Imposter gewinnen, wenn sie das zu erratende Wort erraten können oder nicht entlarvt werden.
+            </p>
+
+            <p class="fw-bold text-decoration-underline">Zusätzliche Hinweise:</p>
+            <p>Imposter sollten versuchen, sich mit den anderen Spielern abzustimmen und nicht zu auffällig zu wirken,
+              wenn sie ihre Wörter wählen.<br>
+              Wenn ein Imposter fälschlicherweise für einen Nicht-Imposter gehalten wird und das Wort errät, gewinnen
+              trotzdem die Imposter.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal#1 end-->
+
+  <div class="mt-3" id="gamePhase1">
+    <div class="container-fluid">
+      <div class="d-flex flex-column align-items-center">
+        <div class="w-75">
+          <h3 class="text-center">Imposter <span type="button" data-bs-toggle="modal"
+              data-bs-target="#staticBackdropImpostor">&#9432</span></h3>
+          <p class="text-center">Findet den oder die Betrüger in euren Reihen.</p>
+          <label class="form-label">Anzahl der Spieler:</label>
+          <br>
+          <input type="number" min="3" max="100" step="1" class="form-control" id="inputNumberOfPlayers"
+            placeholder="min. 3 / max. 100">
+          <div class="dropdown mt-1">
+            <button class="btn btn-dark dropdown-toggle w-100" type="button" id="dropdownMenuButtonPlayer"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Anzahl der Spieler auswählen
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonPlayer">
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(3)">3</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(4)">4</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(5)">5</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(6)">6</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(7)">7</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(8)">8</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(9)">9</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfPlayers(10)">10</button></li>
+            </ul>
+          </div>
+          <br>
+          <label class="form-label">Anzahl der Betrüger:</label>
+          <br>
+          <input type="number" min="1" max="30" step="1" class="form-control" id="inputNumberOfImpostors"
+            placeholder="min. 1 / max. 30">
+          <div class="dropdown mt-1">
+            <button class="btn btn-dark dropdown-toggle w-100" type="button" id="dropdownMenuButtonImpostors"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Anzahl der Betrüger auswählen
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonImpostors">
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfImpostors(1)">1</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfImpostors(2)">2</button></li>
+              <li><button class="btn dropdown-item" type="button" onclick="selectNumberOfImpostors(3)">3</button></li>
+            </ul>
+          </div>
+          <br>
+          <button class="btn btn-dark w-100" type="button" onclick="startGame()">Spiel starten!</button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid my-5 d-none" id="gamePhase2">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <div class="d-flex justify-content-center" id="gamePictureDiv1">
+          <img src="./data/images/impostor-impostor1.jpg" class="card-img-top" alt="Impostor picture"
+            style="width: 18rem; height: 18rem;">
+        </div>
+        <div class="d-flex justify-content-center align-items-center card-img-top fw-bold text-white d-none"
+          id="gameWordDiv"
+          style="width: 18rem; height: 18rem;background-image: url('./data/images/impostor-wall.jpg');background-repeat: no-repeat;background-size: 100% 100%">
+          <p id="gameWord"></p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center" id="playerTitle">Spieler 1</h5>
+          <p class="card-text text-center" id="playerText">Klicke auf den Button um das Wort anzuzeigen.</p>
+          <div class="d-flex justify-content-center" id="revealButton">
+            <button class="btn btn-dark" type="button" onclick="reveal()">Aufdecken!</button>
+          </div>
+          <div class="d-flex justify-content-center d-none" id="coverUpButton">
+            <button class="btn btn-dark" type="button" onclick="coverUp()">Verdecken!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid my-5 d-none" id="gamePhase3">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem;">
+        <div class="d-flex justify-content-center" id="gamePictureDiv2">
+          <img src="./data/images/impostor-impostor2.jpg" class="card-img-top" alt="Impostor picture"
+            style="width: 18rem; height: 18rem;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Wer sucht der findet!</h5>
+          <p class="card-text text-center" id="playerText">Findet den oder die Betrüger und überführt ihn/sie.</p>
+          <div class="d-flex justify-content-center" id="nextGameButton">
+            <button class="btn btn-dark" type="button" onclick="nextGame()">Nochmal spielen!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p></p>
+  <!-- .......................................................................... script .......................................................................... -->
+  <script>
+    let game = {
+      "numberOfPlayers": 0,
+      "numberOfImpostors": 0,
+      "activePlayer": 1,
+      "impostors": [],
+      "word": ""
+    }
+    let words = [
+      "Apfel", "Auto", "Buch", "Haus", "Stuhl", "Tisch", "Blume", "Baum", "Hund", "Katze",
+      "Vogel", "Tasche", "Lampe", "Fenster", "Tür", "Straße", "Berg", "Fluss", "See", "Wald",
+      "Schule", "Lehrer", "Schüler", "Freund", "Freundin", "Familie", "Mutter", "Vater", "Bruder",
+      "Schwester", "Onkel", "Tante", "Oma", "Opa", "Kind", "Mensch", "Junge", "Mädchen", "Arzt",
+      "Krankenschwester", "Polizist", "Feuerwehrmann", "Soldat", "Bäcker", "Schneider", "Zimmermann",
+      "Elektriker", "Koch", "Taxi", "Bahn", "Zug", "Flughafen", "Autohaus", "Werkstatt", "Restaurant",
+      "Café", "Supermarkt", "Einkauf", "Geschäft", "Laden", "Bibliothek", "Museum", "Kino", "Theater",
+      "Sport", "Fußball", "Basketball", "Tennis", "Schwimmen", "Laufen", "Radfahren", "Fitness", "Yoga",
+      "Musik", "Instrument", "Klavier", "Gitarre", "Violine", "Trommel", "Singen", "Lied", "Buchstabe",
+      "Wort", "Satz", "Sprache", "Text", "Schrift", "Lesen", "Schreiben", "Computer", "Telefon",
+      "Internet", "Software", "Spiel", "Film", "Foto", "Bild", "Zeichnung", "Kunst", "Malerei", "Skulptur",
+      "Film", "Licht", "Schatten", "Wolke", "Sonne", "Regen", "Schnee", "Wind", "Wetter", "Jahreszeit",
+      "Sommer", "Herbst", "Winter", "Frühling", "Tag", "Nacht", "Morgen", "Abend", "Mitternacht",
+      "Frühstück", "Mittagessen", "Abendessen", "Snacks", "Kuchen", "Brot", "Käse", "Fleisch", "Gemüse"];
+
+    function startGame() {
+      let gamePhase1 = document.getElementById('gamePhase1');
+      let gamePhase2 = document.getElementById('gamePhase2');
+
+      game.numberOfPlayers = document.getElementById("inputNumberOfPlayers").value;
+      game.numberOfImpostors = document.getElementById("inputNumberOfImpostors").value;
+
+      if (game.numberOfPlayers === "" || game.numberOfImpostors === "" ||
+        game.numberOfPlayers < 3 || game.numberOfPlayers > 100 ||
+        game.numberOfImpostors < 1 || game.numberOfImpostors > 30) {
+        console.info("Invalid input!");
+        return;
+      }
+
+      selectRandomImpostors();
+      selectRandomWord();
+
+      gamePhase1.classList.toggle('d-none'); // if the div is visible, make it invisible and vice versa
+      gamePhase2.classList.toggle('d-none');
+
+      return;
+    }
+    function selectRandomImpostors() {
+      while (game.impostors.length < game.numberOfImpostors) {
+        let tmp = (Math.floor(Math.random() * game.numberOfPlayers)) + 1  // +1 because Math.floor rounds off (possible integer: 1 - game.numberOfPlayers)
+
+        if (!game.impostors.includes(tmp)) {
+          game.impostors.push(tmp)
+        }
+      }
+      return;
+    }
+    function selectRandomWord() {
+      console.log(words.length);
+      console.log(words);
+      game.word = words[(Math.floor(Math.random() * words.length))]
+      return;
+    }
+    function selectNumberOfPlayers(players) {
+      document.getElementById("inputNumberOfPlayers").value = players;
+      return;
+    }
+    function selectNumberOfImpostors(impostors) {
+      document.getElementById("inputNumberOfImpostors").value = impostors;
+      return;
+    }
+    function reveal() {
+
+      document.getElementById("playerText").innerText = "Klicke auf den Button um das Wort zu verbergen.";
+
+      if (game.impostors.includes(game.activePlayer)) {
+        document.getElementById("gameWord").innerText = "???";
+      }
+      else {
+        document.getElementById("gameWord").innerText = game.word;
+      }
+
+      switchContext();
+      return;
+    }
+    function coverUp() {
+
+      document.getElementById("playerText").innerText = "Klicke auf den Button um das Wort anzuzeigen.";
+
+      if (game.activePlayer == game.numberOfPlayers) {
+        let gamePhase2 = document.getElementById('gamePhase2');
+        let gamePhase3 = document.getElementById('gamePhase3');
+
+        gamePhase2.classList.toggle('d-none'); // if the div is visible, make it invisible and vice versa
+        gamePhase3.classList.toggle('d-none');
+        switchContext();
+        return;
+      }
+
+      switchContext();
+      game.activePlayer += 1;
+      document.getElementById("playerTitle").innerText = "Spieler " + game.activePlayer;
+      return;
+    }
+    function switchContext() {
+      let rb = document.getElementById('revealButton');
+      let cup = document.getElementById('coverUpButton');
+      let gpd = document.getElementById('gamePictureDiv1');
+      let gwd = document.getElementById('gameWordDiv');
+
+      rb.classList.toggle('d-none'); // if the div is visible, make it invisible and vice versa
+      cup.classList.toggle('d-none');
+      gpd.classList.toggle('d-none');
+      gwd.classList.toggle('d-none');
+      return;
+    }
+    function nextGame() {
+      let gamePhase2 = document.getElementById('gamePhase2');
+      let gamePhase3 = document.getElementById('gamePhase3');
+
+      game.activePlayer = 1;
+      selectRandomWord();
+      game.impostors = [];
+      selectRandomImpostors();
+
+      document.getElementById("playerTitle").innerText = "Spieler " + 1;
+
+      gamePhase2.classList.toggle('d-none'); // if the div is visible, make it invisible and vice versa
+      gamePhase3.classList.toggle('d-none');
+      return;
+    }
+
+    window.onload = () => {
+      document.getElementById("inputNumberOfPlayers").value = "";
+      document.getElementById("inputNumberOfImpostors").value = "";
+    };
+  </script>
+</body>
+
+</html>
