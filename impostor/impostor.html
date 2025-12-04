@@ -224,7 +224,7 @@ Just a collection of games I have digitized.
       "activePlayer": 1,
       "impostors": [],
       "word": ""
-    }
+    };
     let words = [
       "Apfel", "Auto", "Buch", "Haus", "Stuhl", "Tisch", "Blume", "Baum", "Hund", "Katze",
       "Vogel", "Tasche", "Lampe", "Fenster", "Tür", "Straße", "Berg", "Fluss", "See", "Wald",
@@ -239,7 +239,27 @@ Just a collection of games I have digitized.
       "Internet", "Software", "Spiel", "Film", "Foto", "Bild", "Zeichnung", "Kunst", "Malerei", "Skulptur",
       "Film", "Licht", "Schatten", "Wolke", "Sonne", "Regen", "Schnee", "Wind", "Wetter", "Jahreszeit",
       "Sommer", "Herbst", "Winter", "Frühling", "Tag", "Nacht", "Morgen", "Abend", "Mitternacht",
-      "Frühstück", "Mittagessen", "Abendessen", "Snacks", "Kuchen", "Brot", "Käse", "Fleisch", "Gemüse"];
+      "Frühstück", "Mittagessen", "Abendessen", "Snacks", "Kuchen", "Brot", "Käse", "Fleisch", "Gemüse",
+      "Wal", "Popcorn", "Karate", "Tanz", "Zikade", "Traktor", "Clown", "Vereinigte Staaten", "Katzen",
+      "Zitrone", "Hemd", "Sport", "Qualle", "Passage", "Coronavirus", "Gummi", "Schaf", "Huhn", "Phönix",
+      "Einigkeit", "Surf", "Präsident", "Die Königin von England", "Tarot", "Badezimmer", "Baseball", "Hebamme",
+      "Pfannkuchen", "Tiger", "Zelt", "Fee", "Die kleine Meerjungfrau", "Poesie", "Baumwolle", "Hundehütte",
+      "Gitarre", "Kamin", "Betrüger", "Schauspieler", "Neujahr", "Staubsauger", "Boot", "Traurigkeit", "Instagram",
+      "Keller", "Känguru", "Michael Schumacher", "Chemie", "Rugby", "Hot Dog", "Segeln", "Hai", "Fußball", "Iglu",
+      "Russland", "Virus", "Krankenwagen", "Freiheitsstatue", "Aprilscherz", "Kampf", "Bus", "Kuh", "Tabak", "Löwe",
+      "Karl Lagerfeld", "Spektakel", "Walnuss", "Judo", "Winter", "Spider-Man", "Seestern", "Wüste", "Biografie",
+      "Mercedes-Benz", "Poker", "Hip-Hop", "Kaugummi", "Schaltier", "Krankenschwester", "Der Zorn", "Metzgerei",
+      "Wildschwein", "Tango", "Schokolade", "Klassische Musik", "Krabbe", "Schneewittchen", "Kamel", "Geografie",
+      "Englisch", "Pinocchio", "Schneeschuh", "Springseil", "Drache", "Schatz", "Ludwig van Beethoven", "Varizellen",
+      "Spaghetti", "Schal", "Küche", "Schneeflocke", "Köln", "Fallschirmspringen", "Dokumentarfilm", "Golf", "Kaninchen",
+      "Gold", "Oktoberfest", "Papagei", "Buzz Lightyear", "Blut", "Schildkröte", "Biene", "Rennen", "Handball", "Vertrag",
+      "Gras", "Handy", "Pinguin", "Gymnastik", "Seide", "Index", "Bogenschießen", "Klavier", "Basketball", "Hagel",
+      "Flugzeug", "Bibliothek", "Milch", "New York", "Zirkus", "Eifersucht", "Lionel Messi", "Chilischoten",
+      "Die Chinesische Mauer", "Schlagen", "Regen", "Träne", "Weihnachten", "Bär", "Zug", "Lord Voldemort", "Kompass",
+      "Skateboard", "Düsseldorf", "Fuchs", "Western", "Maurer", "Die Schneekönigin", "Projektor", "Rock and Roll",
+      "Papa", "Benzin", "Spiel", "Liebe", "Google", "Rap", "Ortsteil", "Aladin", "Eisbär", "Diät", "Reggae", "Wohnzimmer",
+      "Krokodil", "Schneemann", "Kylian Mbappé", "Snapchat", "Krähe", "Toy Story", "Socke", "Musikalische Komödie",
+      "Violine", "Reparatur", "Albert Einstein", "Italienisch", "Oger", "Kleopatra", "Singen"];
 
     function startGame() {
       let gamePhase1 = document.getElementById('gamePhase1');
@@ -275,7 +295,6 @@ Just a collection of games I have digitized.
     }
     function selectRandomWord() {
       console.log(words.length);
-      console.log(words);
       game.word = words[(Math.floor(Math.random() * words.length))]
       return;
     }
